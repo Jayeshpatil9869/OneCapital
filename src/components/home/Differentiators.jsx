@@ -1,37 +1,23 @@
 import { motion } from 'framer-motion';
-import { Users, Percent, Search, BarChart3, Smartphone, ShieldCheck } from 'lucide-react';
+import { XCircle, CheckCircle2 } from 'lucide-react';
 
-const features = [
+const comparisons = [
     {
-        icon: <Users className="w-6 h-6 text-[#00C9A7]" />,
-        title: 'Expert-Led Portfolios',
-        description: 'Founded by wealth managers with a proven ₹500+ Cr managed track record.',
+        old: 'RMs rarely track your portfolio and reach out only to sell.',
+        new: 'We track the market’s impact on your portfolio daily.',
     },
     {
-        icon: <Percent className="w-6 h-6 text-[#00C9A7]" />,
-        title: 'Skin In The Game (PMS)',
-        description: '0% fixed fee, 10% profit sharing only. We only win when you win.',
+        old: 'Delayed action on your portfolio due to manual processes.',
+        new: 'Algorithm-assisted systems automatically capitalize on opportunities.',
     },
     {
-        icon: <Search className="w-6 h-6 text-[#00C9A7]" />,
-        title: 'Unbiased Advice',
-        description: 'Zero commissions from fund companies. Purely client-interest driven.',
+        old: 'Hidden commissions and opaque fee structures.',
+        new: '100% transparent reporting on changes, impact, and fees.',
     },
     {
-        icon: <BarChart3 className="w-6 h-6 text-[#00C9A7]" />,
-        title: 'Diversified Assets',
-        description: 'Equity, Debt, Gold, and Alternative investments all under one roof.',
+        old: 'Generic products pushed to meet sales targets.',
+        new: 'Unbiased, data-driven decisions tailored to your risk personality.',
     },
-    {
-        icon: <Smartphone className="w-6 h-6 text-[#00C9A7]" />,
-        title: 'Tech + Human Hybrid',
-        description: 'AI-enabled onboarding plus a dedicated relationship manager for you.',
-    },
-    {
-        icon: <ShieldCheck className="w-6 h-6 text-[#00C9A7]" />,
-        title: 'Institutional Grade Safety',
-        description: 'SEBI Regulated & ISO Certified. Your money is held securely by custodian banks.',
-    }
 ];
 
 const Differentiators = () => {
@@ -41,36 +27,53 @@ const Differentiators = () => {
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
                     <div className="max-w-2xl">
                         <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B2A] tracking-tight mb-4">
-                            Why India's smart money chooses 1Capital
+                            Traditional wealth management is broken.
                         </h2>
                         <p className="text-lg text-gray-600">
-                            We eliminated the conflicts of interest in traditional wealth management to build a platform that truly works for you.
+                            We eliminated conflicts of interest and manual delays to build a data-driven platform that puts fiduciary duty first.
                         </p>
                     </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {features.map((feature, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.4, delay: index * 0.1 }}
-                            className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group"
-                        >
-                            <div className="w-12 h-12 rounded-xl bg-[#0D1B2A]/5 flex items-center justify-center mb-6 group-hover:bg-[#00C9A7]/10 transition-colors">
-                                {feature.icon}
-                            </div>
-                            <h3 className="text-xl font-bold text-[#0D1B2A] mb-3">
-                                {feature.title}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden"
+                >
+                    <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                        {/* Old Way */}
+                        <div className="p-8 md:p-12 bg-gray-50/50">
+                            <h3 className="text-2xl font-bold text-gray-400 mb-8 tracking-tight">
+                                Traditional Approach
                             </h3>
-                            <p className="text-gray-600 leading-relaxed">
-                                {feature.description}
-                            </p>
-                        </motion.div>
-                    ))}
-                </div>
+                            <ul className="space-y-6">
+                                {comparisons.map((item, i) => (
+                                    <li key={i} className="flex gap-4 items-start">
+                                        <XCircle className="w-6 h-6 text-red-400 shrink-0 mt-0.5" />
+                                        <span className="text-gray-500 leading-relaxed font-medium">{item.old}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* New Way */}
+                        <div className="p-8 md:p-12 bg-[#0D1B2A] text-white">
+                            <h3 className="text-2xl font-bold text-[#00C9A7] mb-8 tracking-tight">
+                                1Capital Precision
+                            </h3>
+                            <ul className="space-y-6">
+                                {comparisons.map((item, i) => (
+                                    <li key={i} className="flex gap-4 items-start">
+                                        <CheckCircle2 className="w-6 h-6 text-[#00C9A7] shrink-0 mt-0.5" />
+                                        <span className="text-gray-200 leading-relaxed font-medium">{item.new}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </motion.div>
             </div>
         </section>
     );

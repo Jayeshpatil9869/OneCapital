@@ -25,10 +25,10 @@ const WealthMonitorSteps = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B2A] mb-6">
-                        Three steps to portfolio clarity
+                        Simplified data for amplified returns
                     </h2>
                     <p className="text-gray-600 text-lg">
-                        Stop guessing. Our Wealth Monitor health check is a complimentary service designed to give you an objective second opinion on your life's savings.
+                        Leave no room for second guessing. Our complimentary Wealth Monitor removes investment anxiety by bringing clarity and method to your portfolio.
                     </p>
                 </div>
 

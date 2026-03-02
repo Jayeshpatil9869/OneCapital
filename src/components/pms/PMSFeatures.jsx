@@ -35,10 +35,10 @@ const PMSFeatures = () => {
                     {/* Left: Features Grid */}
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B2A] mb-6">
-                            How PMS differs from standard mutual funds
+                            Invest in the freedom to choose
                         </h2>
                         <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-                            Our Portfolio Management Services unlock a level of customization, direct ownership, and strategic agility that traditional pooled funds cannot offer.
+                            Bring the advantage of your personality to investing. Our Portfolio Management Services offer bespoke strategies that align precisely with your goals, simplifying complex data to amplify your returns.
                         </p>
 
                         <div className="space-y-8">

@@ -40,9 +40,9 @@ const StatsBar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-x divide-gray-100">
                     <Counter value={500} prefix="₹" suffix="+ Cr" label="Assets Under Management" />
-                    <Counter value={10000} suffix="+" label="Investors Tracking Wealth" />
+                    <Counter value={98} suffix="%" label="Client Retention Rate" />
+                    <Counter value={1000} suffix="+" label="Portfolios Tracked Daily" />
                     <Counter value={15} suffix="+ Years" label="Team Experience" />
-                    <Counter value={50} suffix="+" label="Cities Served" />
                 </div>
             </div>
         </section>

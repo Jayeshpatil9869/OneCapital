@@ -48,7 +48,7 @@ const Hero = () => {
                                 to="/contact"
                                 className="inline-flex justify-center items-center bg-transparent border border-white/20 hover:bg-white/5 text-white px-8 py-4 rounded-lg font-semibold transition-all text-lg"
                             >
-                                Talk to an Expert
+                                Get Free Portfolio Review
                             </Link>
                         </div>
 

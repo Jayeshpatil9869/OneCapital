@@ -46,7 +46,7 @@ export function Header() {
                 {
                     'top-0 bg-white/80 supports-[backdrop-filter]:bg-white/60 border-gray-200/50 backdrop-blur-xl md:top-4 md:max-w-6xl md:shadow-md md:border':
                         scrolled && !open,
-                    'top-0 bg-white/95 h-screen md:h-auto': open,
+                    'top-0 bg-white/95 md:bg-white/95 md:h-auto': open,
                 },
                 !scrolled && !open ? 'top-8 bg-transparent border-transparent pt-4 pb-2' : ''
             )}

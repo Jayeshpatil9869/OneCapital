@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Footer = () => {
     return (
@@ -9,9 +10,11 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="lg:col-span-2">
                         <Link to="/" className="inline-block mb-6">
-                            <span className="text-3xl font-bold text-white tracking-tight">
-                                1Capital<span className="text-[#00C9A7]">.</span>
-                            </span>
+                            <img 
+                                src={logo} 
+                                alt="GrowthLane Capital" 
+                                className="h-12 w-auto brightness-0 invert" 
+                            />
                         </Link>
                         <p className="text-gray-400 mb-8 max-w-sm leading-relaxed text-balance">
                             Building India's future by managing yours. Expert-led, technology-driven wealth management for affluent professionals.
@@ -75,7 +78,7 @@ const Footer = () => {
                 {/* Bottom Bar: Trust & Legal */}
                 <div className="pt-8 border-t border-[#1A2E44] flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
                     <div className="flex flex-wrap items-center gap-x-6 gap-y-2 justify-center md:justify-start">
-                        <span>© {new Date().getFullYear()} 1Capital. All rights reserved.</span>
+                        <span>© {new Date().getFullYear()} GrowthLane Capital. All rights reserved.</span>
                         <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
                     </div>

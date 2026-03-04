@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { MenuToggleIcon } from '@/components/ui/menu-toggle-icon';
 import { useScroll } from '@/components/ui/use-scroll';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '@/assets/logo.png';
 
 export function Header() {
     const [open, setOpen] = React.useState(false);
@@ -42,13 +43,13 @@ export function Header() {
     return (
         <header
             className={cn(
-                'fixed z-50 mx-auto w-full max-w-7xl border-b border-transparent md:rounded-b-2xl md:transition-all md:ease-out left-1/2 -translate-x-1/2',
+                'relative z-50 mx-auto w-full max-w-7xl border-b border-transparent md:rounded-b-2xl md:transition-all md:ease-out',
                 {
-                    'top-0 bg-white/80 supports-[backdrop-filter]:bg-white/60 border-gray-200/50 backdrop-blur-xl md:top-4 md:max-w-6xl md:shadow-md md:border':
+                    'bg-white/80 supports-[backdrop-filter]:bg-white/60 border-gray-200/50 backdrop-blur-xl md:mx-auto md:max-w-6xl md:shadow-md md:border md:rounded-b-2xl':
                         scrolled && !open,
-                    'top-0 bg-white/95 md:bg-white/95 md:h-auto': open,
+                    'bg-white/95 md:bg-white/95 md:h-auto': open,
                 },
-                !scrolled && !open ? 'top-8 bg-transparent border-transparent pt-4 pb-2' : ''
+                !scrolled && !open ? (isLightHero ? 'bg-transparent border-transparent pt-4 pb-2' : 'bg-[#0D1B2A] lg:bg-transparent border-transparent pt-4 pb-2') : ''
             )}
         >
             <nav
@@ -60,9 +61,13 @@ export function Header() {
                 )}
             >
                 <Link to="/" className="flex-shrink-0 flex items-center">
-                    <span className={cn("text-2xl font-bold tracking-tight transition-colors duration-300", logoColor)}>
-                        1Capital<span className="text-[#00C9A7]">.</span>
-                    </span>
+                    <img 
+                        src={logo} 
+                        alt="GrowthLane Capital" 
+                        className={cn("h-10 md:h-10 w-auto transition-all duration-300", 
+                            (logoColor === "text-white") ? "brightness-0 invert" : ""
+                        )} 
+                    />
                 </Link>
 
                 <div className="hidden items-center gap-1 md:flex overflow-x-auto mx-4 no-scrollbar">

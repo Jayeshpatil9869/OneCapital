@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
-        <section className="relative bg-[#0D1B2A] text-white pt-20 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+        <section className="relative bg-[#0D1B2A] text-white pt-36 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
             {/* Background abstract elements */}
             <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
                 <div className="absolute top-1/4 -right-1/4 w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#00C9A7] to-transparent blur-[100px]" />
@@ -19,13 +19,13 @@ const Hero = () => {
                         transition={{ duration: 0.6 }}
                         className="max-w-2xl"
                     >
-                        <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
+                        {/* <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8">
                             <span className="flex h-2 w-2 relative">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00C9A7] opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00C9A7]"></span>
                             </span>
                             <span className="text-sm font-medium text-gray-300">Managing ₹500+ Cr across India</span>
-                        </div>
+                        </div> */}
 
                         <h1 className="text-3xl lg:text-6xl xl:text-5xl font-bold tracking-tight mb-6 leading-[1.1]">
                             Invest like the <span className="text-[#00C9A7]">experts.</span><br />

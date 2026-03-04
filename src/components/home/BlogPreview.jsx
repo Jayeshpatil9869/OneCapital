@@ -2,32 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Clock } from 'lucide-react';
 
-const articles = [
-    {
-        title: 'Why Most Portfolio Management Services Underperform',
-        category: 'PMS Insights',
-        excerpt: 'An honest look at the fee structures and hidden costs that eat into your returns over a 10-year horizon.',
-        date: 'March 15, 2026',
-        readTime: '5 min read',
-        slug: '/blog/pms-underperformance'
-    },
-    {
-        title: 'Integrated Portfolio Approach vs Traditional Mutual Funds',
-        category: 'Mutual Funds',
-        excerpt: 'How active rebalancing and expert curation can add up to 2% annualized alpha to your portfolio.',
-        date: 'March 10, 2026',
-        readTime: '4 min read',
-        slug: '/blog/ipa-vs-mutual-funds'
-    },
-    {
-        title: 'Demystifying AIFs: Are Alternative Investments Right For You?',
-        category: 'Alternative Assets',
-        excerpt: 'A comprehensive guide to Category I, II, and III AIFs and how they fit into a HNI portfolio.',
-        date: 'March 02, 2026',
-        readTime: '7 min read',
-        slug: '/blog/demystifying-aifs'
-    }
-];
+import { blogPosts } from '@/data/blogPosts';
 
 const BlogPreview = () => {
     return (
@@ -52,7 +27,7 @@ const BlogPreview = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {articles.map((article, index) => (
+                    {blogPosts.map((article, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
@@ -73,7 +48,7 @@ const BlogPreview = () => {
                                 </div>
 
                                 <h3 className="text-xl font-bold text-[#0D1B2A] mb-3 group-hover:text-[#00C9A7] transition-colors line-clamp-2">
-                                    <Link to={article.slug}>{article.title}</Link>
+                                    <Link to={`/blog/${article.slug}`}>{article.title}</Link>
                                 </h3>
 
                                 <p className="text-gray-600 mb-6 leading-relaxed line-clamp-3">
@@ -83,7 +58,7 @@ const BlogPreview = () => {
                                 <div className="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
                                     <span className="text-sm font-medium text-gray-500">{article.date}</span>
                                     <Link
-                                        to={article.slug}
+                                        to={`/blog/${article.slug}`}
                                         className="text-[#0D1B2A] font-medium group-hover:text-[#00C9A7] transition-colors flex items-center"
                                     >
                                         Read More

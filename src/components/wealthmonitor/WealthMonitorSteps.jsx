@@ -61,6 +61,7 @@ const WealthMonitorSteps = () => {
                 {/* Upload Box CTA */}
                 <div className="mt-20 max-w-3xl mx-auto">
                     <motion.div
+                        id="cas-upload-box"
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}

@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion';
 import { Activity, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+
+const scrollToUpload = () => {
+    const el = document.getElementById('cas-upload-box');
+    if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+};
 
 const WealthMonitorHero = () => {
     return (
@@ -29,13 +35,13 @@ const WealthMonitorHero = () => {
                             Get an institutional-grade analysis of your current investments. We'll identify hidden fees, overlapping holdings, and opportunities to enhance your risk-adjusted returns.
                         </p>
 
-                        <Link
-                            to="#upload"
-                            className="inline-flex justify-center items-center px-8 py-4 bg-[#00C9A7] text-[#0D1B2A] text-lg font-bold rounded-xl hover:bg-[#00E5BF] transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(0,201,167,0.3)] w-full sm:w-auto"
+                        <button
+                            onClick={scrollToUpload}
+                            className="inline-flex justify-center items-center px-8 py-4 bg-[#00C9A7] text-[#0D1B2A] text-lg font-bold rounded-xl hover:bg-[#00E5BF] transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(0,201,167,0.3)] w-full sm:w-auto cursor-pointer"
                         >
                             Upload CAS Statement
                             <ArrowRight className="ml-2 w-5 h-5" />
-                        </Link>
+                        </button>
                     </motion.div>
                 </div>
 

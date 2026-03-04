@@ -11,6 +11,9 @@ import About from './pages/About';
 import Faqs from './pages/Faqs';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
+import Team from './pages/Team';
+import Careers from './pages/Careers';
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
           <Route path="faqs" element={<Faqs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<BlogPost />} />
+          <Route path="team" element={<Team />} />
+          <Route path="careers" element={<Careers />} />
         </Route>
       </Routes>
     </Router>

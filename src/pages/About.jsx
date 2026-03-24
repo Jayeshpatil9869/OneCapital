@@ -13,7 +13,7 @@ const About = () => {
                         Building India's <span className="text-[#00C9A7]">Financial Future.</span>
                     </h1>
                     <p className="text-xl text-gray-600 mb-12">
-                        1Capital was founded on a simple premise: Retail investors deserve institutional-grade wealth management without the hidden fees.
+                        Growthlane was founded on a simple premise: Retail investors deserve institutional-grade wealth management without the hidden fees.
                     </p>
 
                     <div className="bg-white p-10 rounded-2xl shadow-sm border border-gray-100 text-left">

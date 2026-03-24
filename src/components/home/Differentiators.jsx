@@ -61,7 +61,7 @@ const Differentiators = () => {
                         {/* New Way */}
                         <div className="p-8 md:p-12 bg-[#0D1B2A] text-white">
                             <h3 className="text-2xl font-bold text-[#00C9A7] mb-8 tracking-tight">
-                                1Capital Precision
+                                Growthlane Precision
                             </h3>
                             <ul className="space-y-6">
                                 {comparisons.map((item, i) => (

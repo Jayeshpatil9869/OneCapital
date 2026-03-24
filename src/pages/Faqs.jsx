@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Faqs = () => {
     const faqsLeft = [
         {
-            question: "What makes 1Capital different from traditional wealth managers?",
+            question: "What makes Growthlane different from traditional wealth managers?",
             answer: "We offer institutional-grade investment strategies (like AIFs and customized PMS) combined with a transparent, flat-fee structure. We eliminate hidden commissions and focus purely on delivering alpha aligned with your goals."
         },
         {
@@ -13,7 +13,7 @@ const Faqs = () => {
             answer: "Minimum investment amounts vary by product. PMS strategies typically require ₹50 Lakhs, while AIFs range from ₹1 Crore to ₹5 Crores depending on the specific fund structure."
         },
         {
-            question: "Are my investments safe with 1Capital?",
+            question: "Are my investments safe with Growthlane?",
             answer: "Yes. We operate under strict SEBI guidelines as a registered Investment Advisor and Portfolio Manager. All assets are held in your name with a secure, regulated custodian, ensuring complete transparency and safety."
         },
         {

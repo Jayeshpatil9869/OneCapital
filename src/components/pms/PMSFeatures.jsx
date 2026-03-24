@@ -78,7 +78,7 @@ const PMSFeatures = () => {
                             <p className="text-sm text-gray-500 mt-2">We only make money when you generate Alpha.</p>
                         </div>
 
-                        <h4 className="text-xl font-bold text-[#0D1B2A] mb-6">The 1Capital Advantage</h4>
+                        <h4 className="text-xl font-bold text-[#0D1B2A] mb-6">The Growthlane Advantage</h4>
                         <ul className="space-y-4">
                             {checklist.map((item, index) => (
                                 <li key={index} className="flex items-center text-gray-700">

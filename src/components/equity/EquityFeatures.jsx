@@ -37,7 +37,7 @@ const EquityFeatures = () => {
                             Empowering your trades with expert insights
                         </h2>
                         <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-                            1Capital's Equity Advisory is designed for the modern investor who wants to retain full execution control but demands institutional-quality research.
+                            Growthlane's Equity Advisory is designed for the modern investor who wants to retain full execution control but demands institutional-quality research.
                         </p>
 
                         <div className="space-y-8">

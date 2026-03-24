@@ -65,7 +65,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-start text-gray-400">
                                 <Mail className="w-5 h-5 text-[#00C9A7] mr-3 mt-0.5" />
-                                <a href="mailto:hello@1capital.in" className="hover:text-[#00C9A7] transition-colors">hello@1capital.in</a>
+                                <a href="mailto:hello@growthlane.in" className="hover:text-[#00C9A7] transition-colors">hello@growthlane.in</a>
                             </li>
                             <li className="flex items-start text-gray-400">
                                 <MapPin className="w-5 h-5 text-[#00C9A7] mr-3 mt-0.5 flex-shrink-0" />

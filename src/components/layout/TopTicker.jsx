@@ -8,7 +8,7 @@ const CACHE_TIME_MS = 60 * 60 * 1000; // 1 Hour
 const fallbackItems = [
     { label: "NIFTY 50:", value: "22,010.50 (+0.38%)", color: "text-green-500" },
     { label: "GOLD:", value: "INR62,450 (+0.12%)", color: "text-yellow-500" },
-    { label: "1CAPITAL.IN GROWTH:", value: "Alpha Strategy (+2.1%)", color: "text-blue-400" },
+    { label: "GROWTHLANE.IN GROWTH:", value: "Alpha Strategy (+2.1%)", color: "text-blue-400" },
     { label: "SENSEX:", value: "72,450.20 (+0.45%)", color: "text-green-500" },
     { label: "BANK NIFTY:", value: "46,811.75 (-0.15%)", color: "text-red-500" },
     { label: "USD/INR:", value: "82.90 (-0.05%)", color: "text-red-500" }

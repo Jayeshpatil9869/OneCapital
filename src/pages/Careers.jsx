@@ -54,7 +54,7 @@ const Careers = () => {
                     >
                         <div className="inline-flex items-center space-x-2 text-[#00C9A7] font-semibold tracking-wide text-sm uppercase mb-4 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full">
                             <Briefcase className="w-4 h-4" />
-                            <span>Careers at 1Capital</span>
+                            <span>Careers at Growthlane</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                             Shape the future of <span className="text-[#00C9A7]">wealth management.</span>
@@ -148,8 +148,8 @@ const Careers = () => {
                 <div className="mt-16 text-center bg-[#F0F6FF] rounded-2xl p-10 border border-blue-100">
                     <h3 className="text-xl font-bold text-[#0D1B2A] mb-2">Don't see a fit?</h3>
                     <p className="text-gray-600 mb-6 max-w-lg mx-auto">We are always looking for exceptional talent. Send your resume to our careers team.</p>
-                    <a href="mailto:careers@1capital.in" className="inline-flex items-center justify-center px-6 py-3 bg-[#0D1B2A] text-white font-semibold rounded-xl hover:bg-gray-800 transition-colors">
-                        Email careers@1capital.in
+                    <a href="mailto:careers@growthlane.in" className="inline-flex items-center justify-center px-6 py-3 bg-[#0D1B2A] text-white font-semibold rounded-xl hover:bg-gray-800 transition-colors">
+                        Email careers@growthlane.in
                     </a>
                 </div>
             </div>

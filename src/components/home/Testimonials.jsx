@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
     {
-        text: "1Capital's PMS approach revolutionized our portfolio strategy. Their transparency and data-driven thesis gave me the confidence I needed.",
+        text: "Growthlane's PMS approach revolutionized our portfolio strategy. Their transparency and data-driven thesis gave me the confidence I needed.",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150",
         name: "Priya Sharma",
         role: "Founder, Enterprise SaaS",
@@ -16,7 +16,7 @@ const testimonials = [
         role: "Director, Global Consulting",
     },
     {
-        text: "The dedicated wealth monitor provides incredible clarity. With 1Capital, I found the right partner for my family's wealth for the next 25 years.",
+        text: "The dedicated wealth monitor provides incredible clarity. With Growthlane, I found the right partner for my family's wealth for the next 25 years.",
         image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150",
         name: "Anjali Gupta",
         role: "CEO, Multinational EdTech",
@@ -28,7 +28,7 @@ const testimonials = [
         role: "Promoter, Real Estate Firm",
     },
     {
-        text: "I was skeptical about AIFs until 1Capital demystified them. The investment experts here have a truly solid, quantifiable investment thesis.",
+        text: "I was skeptical about AIFs until Growthlane demystified them. The investment experts here have a truly solid, quantifiable investment thesis.",
         image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150&h=150",
         name: "Neha Patel",
         role: "India MD, Private Equity Fund",
@@ -40,19 +40,19 @@ const testimonials = [
         role: "Founder, Health Tech",
     },
     {
-        text: "Finally, a firm that puts fiduciary duty first. Traditional wealth management is broken; 1Capital's tech-first approach is exactly what I needed.",
+        text: "Finally, a firm that puts fiduciary duty first. Traditional wealth management is broken; Growthlane's tech-first approach is exactly what I needed.",
         image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150&h=150",
         name: "Kavita Iyer",
         role: "Managing Partner",
     },
     {
-        text: "The performance reviews are transparent and comprehensive. I am very sure the experts at 1Capital will invest my money better than I could.",
+        text: "The performance reviews are transparent and comprehensive. I am very sure the experts at Growthlane will invest my money better than I could.",
         image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150&h=150",
         name: "Arjun Reddy",
         role: "Retired Global CFO",
     },
     {
-        text: "1Capital consolidated our fragmented portfolio. Having dedicated client partners we can genuinely trust has been a game-changing experience.",
+        text: "Growthlane consolidated our fragmented portfolio. Having dedicated client partners we can genuinely trust has been a game-changing experience.",
         image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150&h=150",
         name: "Rahul Verma",
         role: "Head of Strategy",

@@ -43,7 +43,7 @@ const AIFContactCTA = () => {
                                 Schedule an AIF Call
                             </Link>
                             <a
-                                href="mailto:aif@1capital.in"
+                                href="mailto:aif@growthlane.in"
                                 className="w-full sm:w-auto inline-flex justify-center items-center px-8 py-4 bg-transparent border-2 border-gray-600 text-white text-lg font-bold rounded-xl hover:bg-gray-800 hover:border-gray-500 transition-all"
                             >
                                 <Mail className="w-5 h-5 mr-2" />

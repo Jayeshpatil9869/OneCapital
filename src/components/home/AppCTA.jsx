@@ -25,7 +25,7 @@ const AppCTA = () => {
                                 <span className="text-[#00C9A7]">in your pocket.</span>
                             </h2>
                             <p className="text-lg text-gray-400 mb-8 max-w-lg">
-                                Download the 1Capital app to track your portfolio in real-time, get actionable insights, and speak directly with your relationship manager.
+                                Download the Growthlane app to track your portfolio in real-time, get actionable insights, and speak directly with your relationship manager.
                             </p>
 
                             <ul className="space-y-4 mb-10">
@@ -74,12 +74,12 @@ const AppCTA = () => {
                                             <a href="https://play.google.com/store/apps/details?id=com.dwt.capital1" target="_blank" rel="noopener noreferrer">
                                                 <img
                                                     src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://play.google.com/store/apps/details?id=com.dwt.capital1"
-                                                    alt="1Capital App QR Code"
+                                                    alt="Growthlane App QR Code"
                                                     className="w-32 h-32 rounded-lg"
                                                 />
                                             </a>
                                         </div>
-                                        <p className="text-xs text-gray-400 mt-4 text-center font-medium">Scan to download <br /> the 1Capital App</p>
+                                        <p className="text-xs text-gray-400 mt-4 text-center font-medium">Scan to download <br /> the Growthlane App</p>
                                     </div>
                                 </div>
 

@@ -6,7 +6,7 @@ const CookieConsent = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        const consent = localStorage.getItem('1capital_cookie_consent');
+        const consent = localStorage.getItem('growthlane_cookie_consent');
         if (!consent) {
             // Small delay so it doesn't pop up instantly
             const timer = setTimeout(() => setIsVisible(true), 2000);
@@ -15,12 +15,12 @@ const CookieConsent = () => {
     }, []);
 
     const handleAccept = () => {
-        localStorage.setItem('1capital_cookie_consent', 'accepted');
+        localStorage.setItem('growthlane_cookie_consent', 'accepted');
         setIsVisible(false);
     };
 
     const handleDecline = () => {
-        localStorage.setItem('1capital_cookie_consent', 'declined');
+        localStorage.setItem('growthlane_cookie_consent', 'declined');
         setIsVisible(false);
     };
 

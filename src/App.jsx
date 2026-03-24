@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ReactLenis } from 'lenis/react';
 import ScrollToTop from './components/layout/ScrollToTop';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
@@ -17,10 +18,11 @@ import Careers from './pages/Careers';
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Layout />}>
+    <ReactLenis root options={{ lerp: 0.05, duration: 1.5, smoothWheel: true }}>
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="pms" element={<PMS />} />
           <Route path="aif" element={<AIF />} />
@@ -37,6 +39,7 @@ function App() {
         </Route>
       </Routes>
     </Router>
+    </ReactLenis>
   );
 }
 
